@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<section class="post-container">
+                <time class="article-date" datetime="{{ page.date  }}">{{ page.date | date: "%y/%m/%d" }}</time>
+                <main role="main" class="main">
+                    <div class="article-main">
+                        {{ content }}
+                        <span class="post-categories single-post-categories">Posted in: {{ page.categories | category_links }}</span>
+                        {% include author.html %}
+                    </div>
+                </main>
+            </section>

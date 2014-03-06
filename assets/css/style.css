@@ -1,0 +1,327 @@
+/*
+Trys Mudford - 2014
+*/
+
+/* Reset
+-------------------*/
+
+html, body, span, p, a, ul, li, ol, dd, dt, dl, cite, em, strong, blockquote, img, figure {
+	padding: 0;
+	margin: 0;
+}
+
+div, header, footer, section, article, aside, main {
+	display: block;
+	margin:0;
+	padding:0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	margin:0;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+img {
+	border: 0;
+	max-width: 100%;
+}
+
+/* Typography
+-------------------*/
+
+body {
+	font:16px 'Noticia Text', serif;
+	line-height:1.5;
+	color:#4C5259;
+}
+
+p {
+	margin-bottom:20px;
+	font-size:1.250em;
+}
+
+a {
+	color:#CC3636;
+	text-decoration:none;
+}
+
+p a:hover {
+	text-decoration:underline;
+}
+
+h2, h3, h4, h5, h6 {
+	font-family:'Open Sans', sans-serif;
+	font-weight:700;
+	color:#CC3636;
+	margin-bottom:20px;
+}
+
+.entry-title {
+	font-family:'Open Sans', sans-serif;
+	text-align:center;
+	color:#fff;
+	font-weight:700;
+	font-size:3.313em;
+	text-shadow:0 1px 0 #9C3636;
+	line-height:1.1;
+}
+
+h2 {
+	font-size:2.250em;
+}
+
+h3 {
+	font-size:2em;
+}
+
+h4 {
+	font-size:1.8em;
+	color:#4C5259;
+}
+
+h5 {
+	font-size:1.6em;
+}
+
+h6 {
+	font-size:1.2em;
+}
+
+blockquote {
+	font:1.8em 'Open Sans';
+	font-weight:700;
+	line-height:1.2;
+	border-bottom:solid 1px;
+	border-top:solid 4px;
+	padding-top:15px;
+	margin:25px 0 20px;
+}
+
+address {
+	font-style:normal;
+}
+
+
+/* Global
+-------------------*/
+
+.top {
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:65px;
+	background:#CC3636;
+	z-index:4;
+	border-bottom:solid 1px #9C3636
+}
+
+.top .site-title {
+	text-align:center;
+}
+
+.top .site-title a {
+	-webkit-transition:1s all;
+	   -moz-transition:1s all;
+	    -ms-transition:1s all;
+	     -o-transition:1s all;
+	        transition:1s all;
+	opacity:0;
+	top:-20px;
+	color:#fff;
+	font-size:0.5em;
+	position:relative;
+}
+
+.top .site-title.title-visible a {
+	opacity:1;
+	top:0;
+}
+
+#hero {
+	-webkit-box-sizing:border-box;
+	   -moz-box-sizing:border-box;
+	        box-sizing:border-box;
+	-webkit-transition:300ms all;
+	   -moz-transition:300ms all;
+	    -ms-transition:300ms all;
+	     -o-transition:300ms all;
+	        transition:300ms all;
+	padding:1px 0;
+	background:#CC3636;
+	position:relative;
+	top:0;
+	z-index:10;
+	margin:-1px 0;
+}
+
+#hero .entry-title {
+	position:relative;
+	display:block;
+	z-index:15;
+	margin:120px 0;
+	background:#CC3636;
+	padding:0 20px 10px;
+}
+
+.main {
+	-webkit-box-sizing:border-box;
+	   -moz-box-sizing:border-box;
+	        box-sizing:border-box;
+	-webkit-transition:300ms all;
+	   -moz-transition:300ms all;
+	    -ms-transition:300ms all;
+	     -o-transition:300ms all;
+	        transition:300ms all;
+	padding:30px;
+	max-width:1080px;
+	width:100%;
+	margin:0 auto;
+}
+
+
+.author-details {
+	overflow:auto;
+	border-bottom:solid 1px;
+	border-top:solid 4px;
+	padding:25px 0 15px;
+	margin:40px 0 30px;
+	text-align:center;
+}
+
+.author-details img {
+	border-radius:100%;
+	box-shadow:0 0 4px rgba(190, 190, 190, .6);
+	width:160px;
+	margin:0 0 10px;
+}
+
+.author-details h5 {
+	margin-bottom:5px;
+}
+
+/* Post
+-------------------*/
+
+.post-container {
+	position:relative;
+}
+
+.article-date {
+	top:0;
+	left:0;
+	width:100%;
+	display:block;
+	background:#CC3636;
+	color:#fff;
+	font-family:'Open Sans', sans-serif;
+	font-weight:300;
+	text-align:center;
+	line-height:2.2;
+	position:relative;
+	z-index:5;
+}
+
+.single-post-categories {
+	margin-top:30px;
+	display:block;
+}
+
+/* Post Archive
+-------------------*/
+
+.posts {
+	text-align:center;
+	font-size:2em;
+	font-style:italic;
+}
+
+.posts li {
+	margin-bottom:30px;
+}
+
+.posts li:after {
+	content:"";
+	max-width:60px;
+	width:100%;
+	height:1px;
+	background:#e6e6e6;
+	display:block;
+	margin:20px auto 0;
+}
+
+.posts a {
+	-webkit-transition:300ms color;
+	   -moz-transition:300ms color;
+	    -ms-transition:300ms color;
+	     -o-transition:300ms color;
+	        transition:300ms color;
+}
+
+.posts li > a {
+	display:block;
+	line-height:1.1;
+}
+
+.posts li > a:hover {
+	color:#9C3636;
+}
+
+.posts span,
+.posts time {
+	font-size:0.7em;
+	color:#898989;
+}
+
+.posts span a {
+	font-size:0.9em;
+	color:#696969;
+}
+
+.posts span a:hover {
+	color:#333;
+}
+
+
+/* Media Queries
+-------------------*/
+
+@media all and ( min-width:700px ) {
+
+	.top {
+		z-index:8;
+	}
+
+	.entry-title {
+		margin:150px 0;
+	}
+
+	.main {
+		padding:30px 120px;
+	}
+
+	.article-date {
+		top:30px;
+		width:100px;
+		position:absolute;
+	}
+
+	.author-details {
+		text-align:left;
+	}
+
+	.author-details img {
+		float:left;
+		margin:0 25px 10px 0;
+	}
+
+	.author-details p {
+		padding-left:185px;
+	}
+
+}
+
