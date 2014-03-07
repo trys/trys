@@ -167,6 +167,7 @@ address {
 	left:5px;
 	color:#fff;
 	z-index:20;
+	font-size:1.5em;
 }
 
 .nav-home {
@@ -174,13 +175,20 @@ address {
 }
 
 .nav-twitter {
-	top:20px;
+	top:30px;
 }
 
-.nav-github {
-	top:40px;
+a.nav-github {
+	right:5px;
+	left:auto;
+	top:0px;
 }
 
+a.nav-instagram {
+	right:5px;
+	left:auto;
+	top:30px;
+}
 
 /* Page title
 -------------------*/
