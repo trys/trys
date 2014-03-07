@@ -105,8 +105,25 @@ address {
 	font-style:normal;
 }
 
+.article-main ol,
+.article-main ul {
+	margin-bottom:15px;
+}
 
-/* Global
+.article-main ul li {
+	font-size:1.250em;
+	list-style:outside disc;
+	margin-left:22px;
+}
+
+.article-main ol li {
+	font-size:1.250em;
+	list-style:outside decimal;
+	margin-left:22px;
+}
+
+
+/* Header
 -------------------*/
 
 .top {
@@ -142,7 +159,33 @@ address {
 	top:0;
 }
 
-#hero {
+/* Navigation
+-------------------*/
+
+.nav a {
+	position:fixed;
+	left:5px;
+	color:#fff;
+	z-index:20;
+}
+
+.nav-home {
+	top:0;
+}
+
+.nav-twitter {
+	top:20px;
+}
+
+.nav-github {
+	top:40px;
+}
+
+
+/* Page title
+-------------------*/
+
+.hero {
 	-webkit-box-sizing:border-box;
 	   -moz-box-sizing:border-box;
 	        box-sizing:border-box;
@@ -159,13 +202,12 @@ address {
 	margin:-1px 0;
 }
 
-#hero .entry-title {
-	position:relative;
+.hero .entry-title {
 	display:block;
 	z-index:15;
-	margin:120px 0;
+	margin:60px 0;
 	background:#CC3636;
-	padding:0 20px 10px;
+	padding:0 30px 10px;
 }
 
 .main {
@@ -184,10 +226,13 @@ address {
 }
 
 
+/* Author
+-------------------*/
+
 .author-details {
 	overflow:auto;
-	border-bottom:solid 1px;
-	border-top:solid 4px;
+	border-bottom:solid 1px #666;
+	border-top:solid 4px #666;
 	padding:25px 0 15px;
 	margin:40px 0 30px;
 	text-align:center;
@@ -296,8 +341,10 @@ address {
 		z-index:8;
 	}
 
-	.entry-title {
+	.hero .entry-title {
 		margin:150px 0;
+		position:relative;
+		padding:0 70px 10px;
 	}
 
 	.main {
