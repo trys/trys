@@ -31,25 +31,28 @@ Set tone of how the website fits into the business model. Is it:
 - To advise?
 
 ### Authenticity
-‘Does this website belong to the company I think it belongs to?’ Don’t compromise on your brand to the point of user confusion.
+‘Does this website belong to the company I think it belongs to?’ Don’t compromise on your brand to the point of user confusion. Strike that:
+> Don't compromise on your brand at all.
 
 ### Integrity
 ‘Do I trust this website with these weight-loss advertisements and pop-ups?’ I’ll leave you to be the judge...
 
 ### Benefit to the user
-What will the user gain by reading the home page?
+What will the user gain by reading the home page? Is your home page just going to be a funnel to pages with useful content or are you going to give the user the content right away?
 
 ### Commitment
-A fresh and up to date website shows a company that cares about their online presence. Blog feed looking a little ancient - it’s not a great reflection on the business?
+A fresh and up to date website shows a company that cares about their online presence. Blog feed looking a little ancient? Maybe it's time to give it an update.
 
 ### Knowledge and USPs
 What makes your website different. Why should the user stay on  your site.
 
-Although these items should be included in the brand of a business, it’s far too easy to settle for ‘another website with a sticky navigation, full-width carousel, summary paragraph, services panels and a footer full of dull copyright information’. Don’t get me wrong, none of these are wrong, but they must be there for a reason. Question your home page, don’t jump to the defaults. Consider the following:
+---
+
+Although these items should be included in the brand of a business, it’s far too easy to settle for ‘another website with a sticky navigation, full-width carousel, summary paragraph, services panels and a footer full of dull copyright information’ - we've all done it. Don’t get me wrong, none of these are wrong, but they must be there for a reason. Question your home page, justify each element, don’t just jump to the defaults. Consider the following:
 
 - Do you need a carousel taking up most of your page?
-- Why are the services panels where they are?
-- Do you need an opening paragraph if the About us page says the same thing?
+- Why are the services panels situated where they are?
+- Do you need an opening paragraph on the home page if the About us page says the same thing?
 - What function does each element have? - If there isn’t a valid reason, should it be there?
 
 ## Your research is the best research

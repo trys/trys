@@ -91,6 +91,12 @@ h6 {
 	font-size:1.2em;
 }
 
+hr {
+	border-color:#4C5259;
+	border-width:1px;
+	margin:25px 0;
+}
+
 blockquote {
 	font:1.8em 'Open Sans';
 	font-weight:700;
