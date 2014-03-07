@@ -1,13 +1,14 @@
 ---
 layout: post
-title:  "what's the point of a home page?"
-date:   2014-03-07 22:54:59
+title: "what's the point of a home page?"
+date: {}
 categories: usability
+published: true
 ---
 
 Or more precisely, what is the point of **your** home page?
 
-After a very interesting office discussion on the subject of ‘The problem with carousels’, spurred by some great articles by [http://weedygarden.net/2013/01/carousel-stats/](Erik Runyon) and [http://bradfrostweb.com/blog/post/carousels/](Brad Frost), Mark proposed the following question: 
+After a very interesting office discussion on the subject of ‘The problem with carousels’, spurred by some great articles by [Erik Runyon](http://weedygarden.net/2013/01/carousel-stats/) and [Brad Frost](http://bradfrostweb.com/blog/post/carousels/), Mark proposed the following question: 
 
 > What is the point of a home page?
 
@@ -56,5 +57,3 @@ Although these items should be included in the brand of a business, it’s far t
 When you start to analyse your average and target user and the way they interact with your website, you may well be surprised at what they class as a ‘good’ home page. Industry statistics can give a reasonable understanding of user interaction but the best statistics are those gathered from your own website.
 
 If you have a site up and running and you’re looking to replace or update it, add Google Analytics tracking events to your home page and watch how your current users interact. It will give great insight into the pitfalls of your current design and although it won’t necessarily give ideas on how to improve the page, it will stop you making the same mistakes again.
-
-
