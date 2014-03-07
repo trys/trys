@@ -1,5 +1,6 @@
 name: trys mudford. front-end developer
 markdown: redcarpet
 pygments: true
-permalink: /:title
+permalink: :title
+category_dir: categories
 timezone: Europe/London
