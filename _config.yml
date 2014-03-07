@@ -1,4 +1,4 @@
 name: trys mudford. front-end developer
 markdown: redcarpet
 pygments: true
-permalink: ./:title
+permalink: trys/:title
