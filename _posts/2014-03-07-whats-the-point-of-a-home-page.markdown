@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "what's the point of a home page?"
-date: 2014-03-07 22:54:59
+date: {}
 categories: usability
 published: true
 ---
