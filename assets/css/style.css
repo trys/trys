@@ -147,11 +147,11 @@ address {
 }
 
 .top .site-title a {
-	-webkit-transition:1500ms all;
-	   -moz-transition:1500ms all;
-	    -ms-transition:1500ms all;
-	     -o-transition:1500ms all;
-	        transition:1500ms all;
+	-webkit-transition:1000ms all;
+	   -moz-transition:1000ms all;
+	    -ms-transition:1000ms all;
+	     -o-transition:1000ms all;
+	        transition:1000ms all;
 	opacity:0;
 	top:-20px;
 	color:#fff;
@@ -202,11 +202,6 @@ a.nav-instagram {
 	-webkit-box-sizing:border-box;
 	   -moz-box-sizing:border-box;
 	        box-sizing:border-box;
-	-webkit-transition:300ms all;
-	   -moz-transition:300ms all;
-	    -ms-transition:300ms all;
-	     -o-transition:300ms all;
-	        transition:300ms all;
 	background:#CC3636;
 	position:relative;
 	padding:1px 0;
