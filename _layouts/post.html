@@ -6,6 +6,13 @@ layout: default
                 <main role="main" class="main">
                     <div class="article-main">
                         {{ content }}
+                        {% if page.categories %}
+                        <span class="post-categories">Posted in: 
+                            {% for category in page.categories %}
+                                <a href="/categories/{{ category }}">{{ category }} </a>
+                            {% endfor %}
+                        </span>
+                        {% endif %}
                         {% include author.html %}
                     </div>
                     <aside class="comments">
