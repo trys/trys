@@ -4,3 +4,4 @@ pygments: true
 permalink: :title
 category_dir: categories
 timezone: Europe/London
+category-list: [usability, rwd, css, javascript]
