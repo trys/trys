@@ -4,6 +4,7 @@ title: "what's the point of a home page?"
 date: 2014-03-07
 categories: usability
 published: true
+excerpt: What's the point of a home page - trys mudford. front-end developer in Sussex
 ---
 
 Or more precisely, what is the point of **your** home page?
