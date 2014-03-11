@@ -1,0 +1,121 @@
+/* Google+ */
+
+.google_stack .icon-google-plus {
+   color:#fff;
+}
+
+.google_stack .icon-sign-blank {
+   color:#da4835;
+   font-size:150%;
+}
+
+/* Twitter */
+
+.twitter_stack .icon-twitter {
+   color:#fff;
+}
+
+.twitter_stack .icon-sign-blank {
+   color:#06aaea;
+   font-size:150%;
+}
+
+/* Facebook */
+
+.facebook_stack .icon-facebook {
+   color:#fff;
+   left:10%;
+   top:6.3%;
+   font-size:120%;
+}
+
+.facebook_stack .icon-sign-blank {
+   color:#3b5998;
+   font-size:150%;
+}
+
+/* LinkedIn */
+
+.linkedin_stack .icon-linkedin {
+   color:#fff;
+   font-size:100%;
+}
+
+.linkedin_stack .icon-sign-blank {
+   color:#1582bb;
+   font-size:150%;
+}
+
+/* Skype */
+
+.skype_single {
+   color:#08b0f6;
+}
+
+.skype_single .icon-circle {
+   color:#fff;
+   font-size:85%;
+}
+
+.skype_stack .icon-skype {
+   color:#fff;
+}
+
+.skype_stack .icon-sign-blank {
+   color:#08b0f6;
+   font-size:150%;
+}
+
+
+/* Pinterest */
+
+.pinterest_stack .icon-pinterest {
+   color:#c82129;
+   font-size:150%;
+}
+
+.pinterest_stack .icon-circle {
+   color:#fff;
+   font-size:146%;
+}
+
+.pinterest_stack .icon-sign-blank {
+   color:#c82129;
+   font-size:150%;
+}
+
+/* Youtube */
+
+.youtube_stack .icon-youtube-play {
+   color:#c82129;
+   font-size:100%;
+}
+
+.youtube_stack .icon-sign-blank {
+   color:#c82129;
+   font-size:150%;
+}
+
+.youtube_stack .icon-white-base {
+   color:#fff;
+   font-size:50%;
+}
+
+
+/* Flickr */
+
+.flickr_stack .icon-flickr {
+   color:#fff;
+   font-size:150%;
+}
+
+.flickr_stack .icon-sign-blank {
+   color:#fe0072;
+   font-size:50%;
+   left:10%;
+}
+.flickr_stack .icon-blue {
+   color:#0d66d4;
+   font-size:50%;
+   left:-10%;
+}
