@@ -13,12 +13,6 @@
     </head>
     <body>
         <div class="site-container">
-            <header class="top">
-                <h2 class="site-title"><a href="/">{{ site.name }}</a></h2>
+            {% if page.path == 'index.html' %}<header class="top home">{% else %}<header class="top">{% endif %}
+                <h2 class="site-title"><a href="/"><span>{{ site.name }}</span></a></h2>
             </header>
-            <nav class="nav">
-                <a href="/" class="nav-home"><i class="fa fa-home"></i></a>
-                <a href="https://twitter.com/trysmudford" class="nav-twitter"><i class="fa fa-twitter"></i></a>
-                <a href="https://github.com/trys" class="nav-github"><i class="fa fa-github"></i></a>
-                <a href="http://instagram.com/trysmudford" class="nav-instagram"><i class="fa fa-instagram"></i></a>
-            </nav>

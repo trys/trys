@@ -138,8 +138,7 @@ address {
 	width:100%;
 	height:65px;
 	background:#CC3636;
-	z-index:4;
-	border-bottom:solid 1px #9C3636
+	z-index:22;
 }
 
 .top .site-title {
@@ -153,46 +152,70 @@ address {
 	     -o-transition:1000ms all;
 	        transition:1000ms all;
 	opacity:0;
-	top:-20px;
+	top:0px;
 	color:#fff;
 	font-size:0.4em;
 	position:relative;
+	z-index:22;
+	display:inline-block;
+	padding:0 0 0px;
+}
+
+.top .site-title a:after {
+	content:"Home";
+	display:block;
+	opacity:0;
+}
+
+.top .site-title a:after,
+.top .site-title a span {
+	-webkit-transition:1000ms opacity;
+	   -moz-transition:1000ms opacity;
+	    -ms-transition:1000ms opacity;
+	     -o-transition:1000ms opacity;
+	        transition:1000ms opacity;
 }
 
 .top .site-title.title-visible a {
 	opacity:1;
-	top:0;
+	top:20px;
+}
+
+.top .site-title.title-visible a:hover {
+	top:-10px;
+}
+
+.top .site-title.title-visible a:hover span {
+	opacity:0;
+}
+
+.top .site-title.title-visible a:hover:after {
+	opacity:1;
+}
+
+.top.home {
+	z-index:4;
 }
 
 /* Navigation
 -------------------*/
 
+.nav {
+	-webkit-box-sizing:border-box;
+	   -moz-box-sizing:border-box;
+	        box-sizing:border-box;
+	max-width:840px;
+	padding:30px;
+	margin:0 auto;
+	width:100%;
+	text-align:center;
+}
+
 .nav a {
-	position:fixed;
-	left:5px;
-	color:#fff;
+	color:#4C5259;
 	z-index:20;
 	font-size:1.5em;
-}
-
-.nav-home {
-	top:0;
-}
-
-.nav-twitter {
-	top:30px;
-}
-
-a.nav-github {
-	right:5px;
-	left:auto;
-	top:0px;
-}
-
-a.nav-instagram {
-	right:5px;
-	left:auto;
-	top:30px;
+	display:inline;
 }
 
 /* Page title
@@ -349,7 +372,7 @@ a.nav-instagram {
 @media all and ( min-width:700px ) {
 
 	.top {
-		z-index:8;
+		z-index:20;
 	}
 
 	.top .site-title a {
