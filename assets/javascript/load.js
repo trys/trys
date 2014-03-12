@@ -18,7 +18,9 @@ var trys = (function () {
 	};
 }());
 
-$( trys.init() );
+if (typeof jQuery != 'undefined') {
+	$( trys.init() );
+}
 
 /* Google Analytics */
 
