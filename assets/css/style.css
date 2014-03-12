@@ -212,10 +212,19 @@ address {
 }
 
 .nav a {
+	-webkit-transition:300ms color;
+	   -moz-transition:300ms color;
+	    -ms-transition:300ms color;
+	     -o-transition:300ms color;
+	        transition:300ms color;
 	color:#898989;
 	z-index:20;
 	font-size:1.5em;
 	display:inline;
+}
+
+.nav a:hover {
+	color:#4C5259;
 }
 
 /* Page title
