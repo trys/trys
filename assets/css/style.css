@@ -73,7 +73,7 @@ h2, h3, h4, h5, h6 {
 	text-align:center;
 	color:#fff;
 	font-weight:700;
-	font-size:3.313em;
+	font-size:2.613em;
 	text-shadow:0 1px 0 #9C3636;
 	line-height:1.1;
 }
@@ -386,7 +386,15 @@ address {
 /* Media Queries
 -------------------*/
 
-@media all and ( min-width:700px ) {
+@media all and ( min-width:35em ) {
+
+	.entry-title {
+		font-size:3.313em;
+	}
+
+}
+
+@media all and ( min-width:43.75em ) {
 
 	.top {
 		z-index:20;
