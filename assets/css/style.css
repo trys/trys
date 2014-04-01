@@ -30,6 +30,14 @@ img {
 	max-width: 100%;
 }
 
+strong {
+	font-weight:700;
+}
+
+em {
+	font-style:italic;
+}
+
 /* Typography
 -------------------*/
 
@@ -119,13 +127,13 @@ address {
 .article-main ul li {
 	font-size:1.250em;
 	list-style:outside disc;
-	margin-left:22px;
+	margin-left:25px;
 }
 
 .article-main ol li {
 	font-size:1.250em;
 	list-style:outside decimal;
-	margin-left:22px;
+	margin-left:25px;
 }
 
 /* Header
