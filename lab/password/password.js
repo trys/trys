@@ -63,13 +63,16 @@ var source = "",
 	['8','Eight'],
 	['9','Nine'],
 	['0','Zero'],
+	['?','Question Mark'],
+	['!','Exclamation Mark'],
+	['*','Asterisk']
 ];
 
 function generatePw() {
 	'use strict';
 	var i,
 		e,
-		n = 8,
+		n = 10,
 		text = '';
 	
 	e = randomNumber(1,3);
@@ -77,6 +80,10 @@ function generatePw() {
 
 	i = randomNumber(1,3);
 	text += findCharacters('0123456789', i);
+	e = e + i;
+	
+	i = randomNumber(1,2);
+	text += findCharacters('?!*', i);
 	e = e + i;
 
 	n = n - e;
