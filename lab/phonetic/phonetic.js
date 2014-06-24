@@ -63,6 +63,9 @@ var phonetic = [
 	['8','Eight'],
 	['9','Nine'],
 	['0','Zero'],
+	['?','Question mark'],
+	['!','Exclamation mark'],
+	['*','Asterisk']
 ];
 
 function inputcode() {
