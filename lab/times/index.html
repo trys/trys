@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Times Tables</title>
+		<style>
+			@import url(http://fonts.googleapis.com/css?family=Dosis:300);
+
+			* {
+			  -webkit-box-sizing: border-box;
+				 -moz-box-sizing: border-box;
+					  box-sizing: border-box;
+			}
+
+			html,
+			body{
+				background: #e74c3c;
+				text-align: center;
+				padding: 0;
+				margin: 0;
+				color: #fff;
+				font: 42px 'Dosis', sans-serif;
+			}
+
+			body {
+				max-width: 500px;
+				padding: 2rem 1rem;
+				margin: 0 auto;
+			}
+
+			input,
+			button {
+				text-align: center;
+				box-shadow: none;
+				background: none;
+				outline: none;
+				padding: 0.2rem 1rem;
+				border: 0.1rem solid #fff;
+				display: block;
+				margin: 0 0 0.5rem;
+				width: 100%;
+				color: #fff;
+				font: 32px 'Dosis', sans-serif;
+			}
+
+			button {
+				margin: 1.5rem 0 0.5rem;
+			}
+
+			input::-webkit-outer-spin-button,
+			input::-webkit-inner-spin-button {
+				-webkit-appearance: none;
+				margin: 0;
+			}
+
+			::-webkit-input-placeholder {
+				color: #fff;
+			}
+
+			::-moz-placeholder {
+				color: #fff;  
+			}
+
+			:-ms-input-placeholder {
+				color: #fff;  
+			}
+		</style>
+	</head>
+	<body>
+		<span class="term-a"></span> x 
+		<span class="term-b"></span> = 
+		<span class="answer"></span>
+		<button class="generate">Generate</button>
+		<input type="number" min="1" class="times-table" max="15" placeholder="Times Table" pattern="[0-9]" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script>
+			
+			function get_sum() {
+				var timesTable = ($('.times-table').val()) ? $('.times-table').val() : 12,
+					terms = ($('.times-table').val()) ? [get_term(1, 12), timesTable] : [
+						get_term(1, 12), get_term(1, 12)
+					];
+				$('.term-a').text(terms[0]);
+				$('.term-b').text(terms[1]);
+				$('.answer').text(terms[0] * terms[1]);
+			}
+
+			function get_term(min, max) {
+				return Math.floor(Math.random() * (max - min + 1) + min);
+			}
+
+			$(document).on('ready', function() {
+				get_sum();
+				$('.generate').on('click', get_sum );
+			});
+
+		</script>
+	</body>
+</html>
