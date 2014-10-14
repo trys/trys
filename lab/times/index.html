@@ -30,7 +30,8 @@
 			}
 
 			input,
-			button {
+			button,
+			label {
 				text-align: center;
 				box-shadow: none;
 				background: none;
@@ -44,15 +45,32 @@
 				font: 32px 'Dosis', sans-serif;
 			}
 
+			.hide-answer {
+				display: none;
+			}
+
+			label:before {
+				content: "Show ";
+			}
+
+			input:checked + label:before {
+				content: "Hide "
+			}
+
 			button {
 				cursor: pointer;
+			}
+
+			.interaction {
 				margin: 1.5rem 0 0.5rem;
 			}
 
-			input::-webkit-outer-spin-button,
-			input::-webkit-inner-spin-button {
-				-webkit-appearance: none;
-				margin: 0;
+			.interaction-generate:before {
+				content: "Generate";
+			}
+
+			.interaction-answer:before {
+				content: "Answer";
 			}
 
 			::-webkit-input-placeholder {
@@ -72,19 +90,28 @@
 		<span class="term-a"></span> x 
 		<span class="term-b"></span> = 
 		<span class="answer"></span>
-		<button class="generate">Generate</button>
+		<button class="interaction interaction-generate"></button>
 		<input type="number" min="1" class="times-table" max="15" placeholder="Times Table" pattern="[0-9]" />
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script>
 			
 			function get_sum() {
-				var timesTable = ($('.times-table').val()) ? $('.times-table').val() : 12,
-					terms = ($('.times-table').val()) ? [get_term(1, 12), timesTable] : [
-						get_term(1, 12), get_term(1, 12)
-					];
-				$('.term-a').text(terms[0]);
-				$('.term-b').text(terms[1]);
-				$('.answer').text(terms[0] * terms[1]);
+
+				if ( $( '.interaction' ).hasClass( 'interaction-generate' ) ) {
+
+					var timesTable = ( $('.times-table').val() ) ? $( '.times-table' ).val() : 12,
+						terms = ( $('.times-table').val() ) ? [ get_term(1, 12), timesTable ] : [ get_term(1, 12), get_term(1, 12) ];
+
+					$( '.term-a' ).text( terms[0] );
+					$( '.term-b' ).text( terms[1] );
+					$( '.answer' ).hide().text( terms[0] * terms[1] );
+
+				} else {
+					$( '.answer' ).show()
+				}
+
+				$( '.interaction' ).toggleClass( 'interaction-generate interaction-answer' );
+				
 			}
 
 			function get_term(min, max) {
@@ -93,7 +120,7 @@
 
 			$(document).on('ready', function() {
 				get_sum();
-				$('.generate').on('click', get_sum );
+				$(document.body).on('click', '.interaction', get_sum );
 			});
 
 		</script>
