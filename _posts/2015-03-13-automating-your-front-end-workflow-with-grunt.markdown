@@ -1,6 +1,6 @@
 ---
 published: false
-title: "Automating your front-end workflow with Grunt"
+title: "automating your front-end workflow with grunt"
 layout: post
 date: 2014-05-13
 categories: snippets
