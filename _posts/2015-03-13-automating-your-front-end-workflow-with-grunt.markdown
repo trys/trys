@@ -1,9 +1,9 @@
 ---
-published: false
+published: true
 title: "automating your front-end workflow with grunt"
 layout: post
 date: 2014-05-13
-categories: snippets
+categories: workflow
 excerpt: "Automating your front-end workflow with Grunt - trys mudford. front-end developer in Sussex"
 ---
 
