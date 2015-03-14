@@ -110,6 +110,7 @@ module.exports = function(grunt) {
 It's not too complicated to begin with, each project differs slightly so I'll then add specific modules to help me with a specific goal.
 
 The above Gruntfile covers the following:
+
 1. JSLint - JavaScript linting (error checking) as I go - very handy for speeding up development and cutting down on errors significantly.
 2. Concat - Concatinating all JavaScript theme files - it slims down the number of HTTP requests considerably.
 3. Uglify - Minification of JavaScript files
