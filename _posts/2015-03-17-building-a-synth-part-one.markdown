@@ -18,15 +18,15 @@ The intention however, is to create a working browser-based synth ideally encomp
 4. Effects - Delay, Pan, Reverb, Chorus.
 5. Visualisation - whether that is waveform or something entirely different.
 
-I'll focus on the logic to begin with before working on a UI. I think it'll be easier to design once I start getting some features down. I also don't want to get so caught up the UI that I don't make any headway on the sounds.
+I'll focus on the logic to begin with before working on a UI. I think it'll be easier to design once I make a start on getting some features down. I also don't want to get so caught up in the UI that I don't make any headway on the sounds.
 
 Progress will be documented on [GitHub](https://github.com/trys/synth/). I will be publishing to the gh-pages branch so the latest version of the synth can be viewed (and played - try it now!) [here](http://trys.github.io/Synth/).
 
-I'm going to attempt to create it without jQuery, it's far too easy to default to it for every project and I think it can lead to sloppy coding. Therefore, it's not essential for this so I'll go at it alone. Improving my libraryless JavaScript ability is never a bad thing either.
+I'm going to attempt to create it without jQuery, it's far too easy to default to it for every project and I think it can lead to sloppy coding. Therefore, it's not essential for this so I'll go at it alone. Improving my libraryless JavaScript code is never a bad thing either.
 
 ## The synth so far
 
-I've got classes set up for a VCO, VCA and a basic envelope. I've then set the keyboard to trigger two VCOs panned far left and far right with a bit of detune on the latter. With a sine wave set as the oscillator waveforms, it creates a nice subtle chorus-y synth. Not a bad start.
+I've got classes set up for a VCO, VCA and a basic envelope. I've then set the keyboard to trigger two VCOs panned far left and far right with a bit of detune on the latter. With a sine wave on both oscillators, it creates a nice subtle chorusey synth. Not a bad start.
 
 The attack and release are bit messed up but it's still early days. I'll also need to swap out the envelope to a full ADSR module and look into de-zippering. I believe that's what can stop the small clicking sound in between note changes.
 
