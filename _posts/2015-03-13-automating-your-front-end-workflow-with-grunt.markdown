@@ -35,7 +35,7 @@ I use [Grunt](http://gruntjs.com) as my task runner, it's stable, easy to learn 
 module.exports = function(grunt) {
   'use strict';
 
-  var themeDir = 'wp-content/themes/{{project}}/';
+  var themeDir = 'wp-content/themes/*project*/';
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -70,7 +70,7 @@ module.exports = function(grunt) {
       },
       js: {
         files: {
-          'wp-content/themes/{{project}}/assets/js/boot.js': [ themeDir + 'assets/js/boot.js' ]
+          'wp-content/themes/*project*/assets/js/boot.js': [ themeDir + 'assets/js/boot.js' ]
         }
       }
     },
@@ -82,7 +82,7 @@ module.exports = function(grunt) {
             options: {
                 watchTask: true,
                 open: false,
-                proxy: '{{project}}.dev'
+                proxy: '*project*.dev'
             }
         }
     },
